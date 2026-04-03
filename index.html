@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chocolate World</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #3e2723, #6d4c41);
+    color:#fff;
+}
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+header h1{
+    font-size:3rem;
+}
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+    opacity:0.8;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+.card{
+    background:#4e342e;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card-content{
+    padding:20px;
+}
+.card-content h3{
+    margin-bottom:10px;
+}
+.card-content p{
+    font-size:0.9rem;
+    opacity:0.85;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#2e1c17;
+    margin-top:30px;
+}
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    background:#d7a86e;
+    color:#3e2723;
+    cursor:pointer;
+    font-weight:600;
+}
+button:hover{
+    background:#ffcc80;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍫 Chocolate World</h1>
+    <p>Discover the sweetness of chocolates from around the globe</p>
+</header>
+
+<section class="container">
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52" alt="Dark Chocolate">
+    <div class="card-content">
+        <h3>Dark Chocolate</h3>
+        <p>Rich and slightly bitter, dark chocolate is packed with antioxidants and intense flavor.</p>
+        <button onclick="alert('Dark chocolate is great for your heart!')">Learn More</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1617191518009-4c9b8b87b84d" alt="Milk Chocolate">
+    <div class="card-content">
+        <h3>Milk Chocolate</h3>
+        <p>Smooth and creamy, milk chocolate is the most popular type loved by all age groups.</p>
+        <button onclick="alert('Milk chocolate is creamy and delicious!')">Learn More</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1589987607627-7f2c8c5fa0f2" alt="White Chocolate">
+    <div class="card-content">
+        <h3>White Chocolate</h3>
+        <p>Sweet and buttery, white chocolate contains cocoa butter but no cocoa solids.</p>
+        <button onclick="alert('White chocolate is sweet and smooth!')">Learn More</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f79" alt="Chocolate Truffles">
+    <div class="card-content">
+        <h3>Chocolate Truffles</h3>
+        <p>Luxury bite-sized delights with creamy ganache centers coated in cocoa powder or nuts.</p>
+        <button onclick="alert('Truffles are premium chocolates!')">Learn More</button>
+    </div>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Chocolate World | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
