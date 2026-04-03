@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI in Various Fields</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color:white;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    opacity:0.8;
+}
+
+/* GRID */
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+/* CARD */
+.card{
+    background:#1c2b33;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#00d4ff;
+}
+
+.card p{
+    font-size:0.9rem;
+    opacity:0.85;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    background:#00d4ff;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00a8cc;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin-top:20px;
+    font-size:2rem;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b1a21;
+    margin-top:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🤖 Importance of AI</h1>
+    <p>How Artificial Intelligence is transforming the world</p>
+</header>
+
+<h2 class="section-title">AI in Various Fields</h2>
+
+<section class="container">
+
+<div class="card">
+    <h3>🏥 Healthcare</h3>
+    <p>AI helps doctors diagnose diseases, predict health risks, and create personalized treatments. It also assists in robotic surgeries.</p>
+    <button onclick="info('Healthcare')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>🎓 Education</h3>
+    <p>AI provides personalized learning, smart tutoring systems, and automates grading and student evaluation.</p>
+    <button onclick="info('Education')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>🌾 Agriculture</h3>
+    <p>AI improves crop yield using smart farming, soil analysis, and pest detection while reducing waste.</p>
+    <button onclick="info('Agriculture')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>💰 Finance</h3>
+    <p>AI detects fraud, manages risks, and helps in smarter financial decisions and automated trading.</p>
+    <button onclick="info('Finance')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>🚗 Transportation</h3>
+    <p>AI powers self-driving cars, traffic prediction, and route optimization for faster and safer travel.</p>
+    <button onclick="info('Transportation')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>🛍️ Business</h3>
+    <p>AI improves customer service through chatbots, recommendation systems, and automation of tasks.</p>
+    <button onclick="info('Business')">Learn More</button>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 AI World | Created by You 🚀</p>
+</footer>
+
+<script>
+function info(field){
+    let message = "";
+
+    if(field === "Healthcare"){
+        message = "AI helps in early disease detection and better treatments.";
+    }
+    else if(field === "Education"){
+        message = "AI makes learning personalized and more effective.";
+    }
+    else if(field === "Agriculture"){
+        message = "AI helps farmers increase productivity and reduce waste.";
+    }
+    else if(field === "Finance"){
+        message = "AI helps detect fraud and manage financial risks.";
+    }
+    else if(field === "Transportation"){
+        message = "AI enables self-driving cars and smart traffic systems.";
+    }
+    else{
+        message = "AI improves business efficiency and customer experience.";
+    }
+
+    alert(message);
+}
+</script>
+
+</body>
+</html>
